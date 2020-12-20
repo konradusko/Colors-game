@@ -12,8 +12,11 @@ You have to remember the same colors and then find them to win.
 You can play on time:
 
 Level Latwy offers 60 seconds for play
+
 Level Sredni offers 120 seconds for play
+
 Level Trudny offers 180 seconds for play
+
 
 You can also play on hard mode with numbers to rembers.
 
