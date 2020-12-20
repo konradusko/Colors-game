@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Kolory</title>
+</head>
+<body>
+    <div id="main_container" class="container_menu_background">
+        <div id="end_of_game_container" class="end_game_container">
+            <h2 id="win_or_lose_title">Gratulacje wygrałeś!</h2>
+            <div class="result_container">
+                <span id="wrong_click_right_click" class="result_span">0</span>
+            </div>
+            <div class="result_container">
+                <span id="time_in_play" class="result_span">0</span>
+            </div>
+            <button id="play_again_button" class="button_play_again">Zagraj Ponownie</button>
+        </div>
+        <div id="menu_container" class="menu_container_context">
+        
+            <div class="menu_row title_and_instruction">
+                <h1>Kolorki</h1>
+            </div>
+            <div  class="menu_row">
+                <h2>Same Kolor bez limitu czasu</h2>
+                <div id="Only_Colors" class="buttons_container">
+                    <button class="button_game">Łatwy</button>
+                    <button class="button_game">Średni</button>
+                    <button class="button_game">Trudny</button>
+                </div>
+            </div>
+            <div  class="menu_row">
+                <h2>Same Kolor na czas</h2>
+                <div id="Colors_For_Time" class="buttons_container">
+                    <button class="button_game">Łatwy</button>
+                    <button class="button_game">Średni</button>
+                    <button class="button_game">Trudny</button>
+                </div>
+            </div>
+            <div  class="menu_row">
+                <h2>Kolory z liczbami</h2>
+                <div id="Colors_and_numbers" class="buttons_container">
+                    <button class="button_game">Łatwy</button>
+                    <button class="button_game">Średni</button>
+                    <button class="button_game">Trudny</button>
+                </div>
+            </div>
+            <div  class="menu_row lastColumn">
+                <h2>Kolory z liczbami na czas</h2>
+                <div id="Colors_and_numbers_on_time" class="buttons_container">
+                    <button class="button_game">Łatwy</button>
+                    <button class="button_game">Średni</button>
+                    <button class="button_game">Trudny</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

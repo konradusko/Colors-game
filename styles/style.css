@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container_menu_background {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container_menu_background .end_game_container {
+  width: 300px;
+  height: 200px;
+  background-color: #754d4d;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_menu_background .end_game_container h2 {
+  color: white;
+  font-size: 30px;
+  margin: 5px 0 5px 5px;
+}
+
+.container_menu_background .end_game_container .result_container {
+  margin: 5px 0 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.container_menu_background .end_game_container .result_container .result_span {
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.container_menu_background .end_game_container .button_play_again {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin: auto auto 20px auto;
+}
+
+.container_menu_background .map_container {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container_menu_background .map_container .square {
+  margin: auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container_menu_background .map_container .square .square_number {
+  font-size: 30px;
+  color: red;
+  margin: auto;
+}
+
+.container_menu_background .menu_container_context {
+  width: 300px;
+  height: 400px;
+  background-color: #754d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container_menu_background .menu_container_context .menu_row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_menu_background .menu_container_context .menu_row h2 {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+.container_menu_background .menu_container_context .menu_row .buttons_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+}
+
+.container_menu_background .menu_container_context .menu_row .buttons_container button {
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.container_menu_background .menu_container_context .title_and_instruction {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container_menu_background .menu_container_context .title_and_instruction h1 {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+.container_menu_background .menu_container_context .lastColumn {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
