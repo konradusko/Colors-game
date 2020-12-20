@@ -127,14 +127,14 @@ class Game {
         this.countTimeInplay(false);
         if (win_lose) {
             //true to wygrana
-            winOrLoseTitle.innerHTML = "Gratulację wygrałeś!";
-            result_Of_wrong_click_right_click.innerHTML = `Błędnych kliknięć: ${this.wrongClicks.toString()}`;
-            result_time_in_Play.innerHTML = `Gra trwała ${this.timeInPlay.toString()} sekund`;
+            winOrLoseTitle.innerHTML = "You won!";
+            result_Of_wrong_click_right_click.innerHTML = `Wrong clicks: ${this.wrongClicks.toString()}`;
+            result_time_in_Play.innerHTML = `You played ${this.timeInPlay.toString()} seconds`;
         }
         else if (!win_lose) {
-            winOrLoseTitle.innerHTML = "Zawiodłeś!";
-            result_Of_wrong_click_right_click.innerHTML = `Poprawnych kliknięć: ${this.rightClicks.toString()}`;
-            result_time_in_Play.innerHTML = `Twoje ${this.propOfSquare.timeForPlay} sekund mineło`;
+            winOrLoseTitle.innerHTML = "You have failed!";
+            result_Of_wrong_click_right_click.innerHTML = `Correct clicks: ${this.rightClicks.toString()}`;
+            result_time_in_Play.innerHTML = `Yours ${this.propOfSquare.timeForPlay} second has gone`;
             //przegrana
         }
         end_of_game_container.style.display = "flex";
@@ -165,17 +165,17 @@ class Game {
     }
     getNumberofSquare(lvl) {
         let property;
-        if (lvl == "Łatwy") {
+        if (lvl == "Easy") {
             property = {
                 numberOfSquare: 24,
                 row: 4,
                 column: 6,
-                timeToShowColors: 1000,
+                timeToShowColors: 3000,
                 howMuchSameColor: 2,
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Średni") {
+        else if (lvl == "Medium") {
             property = {
                 numberOfSquare: 30,
                 row: 5,
@@ -185,7 +185,7 @@ class Game {
                 gameWithNumber: false
             };
         }
-        else if (lvl == "Trudny") {
+        else if (lvl == "Hard") {
             property = {
                 numberOfSquare: 42,
                 row: 7,
@@ -236,7 +236,6 @@ class Game {
             arraytToReturn[x] = arraytToReturn[j];
             arraytToReturn[j] = k;
         }
-        console.log(arraytToReturn);
         return arraytToReturn;
     }
 }
@@ -253,18 +252,18 @@ class GameOnTime extends Game {
     }
     getNumberofSquare(lvl) {
         let property;
-        if (lvl == "Łatwy") {
+        if (lvl == "Easy") {
             property = {
                 numberOfSquare: 24,
                 row: 4,
                 column: 6,
-                timeToShowColors: 1000,
+                timeToShowColors: 3000,
                 timeForPlay: 60,
                 howMuchSameColor: 2,
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Średni") {
+        else if (lvl == "Medium") {
             property = {
                 numberOfSquare: 30,
                 row: 5,
@@ -275,7 +274,7 @@ class GameOnTime extends Game {
                 gameWithNumber: false
             };
         }
-        else if (lvl == "Trudny") {
+        else if (lvl == "Hard") {
             property = {
                 numberOfSquare: 42,
                 row: 7,
@@ -295,7 +294,7 @@ class GameOnNumbers extends Game {
     }
     getNumberofSquare(lvl) {
         let property;
-        if (lvl == "Łatwy") {
+        if (lvl == "Easy") {
             property = {
                 numberOfSquare: 24,
                 row: 4,
@@ -305,7 +304,7 @@ class GameOnNumbers extends Game {
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Średni") {
+        else if (lvl == "Medium") {
             property = {
                 numberOfSquare: 36,
                 row: 6,
@@ -315,7 +314,7 @@ class GameOnNumbers extends Game {
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Trudny") {
+        else if (lvl == "Hard") {
             property = {
                 numberOfSquare: 42,
                 row: 6,
@@ -334,7 +333,7 @@ class GamesOnNumberWithTime extends GameOnTime {
     }
     getNumberofSquare(lvl) {
         let property;
-        if (lvl == "Łatwy") {
+        if (lvl == "Easy") {
             property = {
                 numberOfSquare: 24,
                 row: 4,
@@ -345,7 +344,7 @@ class GamesOnNumberWithTime extends GameOnTime {
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Średni") {
+        else if (lvl == "Medium") {
             property = {
                 numberOfSquare: 36,
                 row: 6,
@@ -356,7 +355,7 @@ class GamesOnNumberWithTime extends GameOnTime {
                 gameWithNumber: true
             };
         }
-        else if (lvl == "Trudny") {
+        else if (lvl == "Hard") {
             property = {
                 numberOfSquare: 42,
                 row: 6,

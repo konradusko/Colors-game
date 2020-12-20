@@ -6,7 +6,7 @@ const play_Again_Button: HTMLElement = document.getElementById("play_again_butto
 const result_Of_wrong_click_right_click: HTMLElement = document.getElementById("wrong_click_right_click");
 const result_time_in_Play: HTMLElement = document.getElementById("time_in_play");
 const winOrLoseTitle: HTMLElement = document.getElementById("win_or_lose_title");
-type Levels = "Łatwy" | "Średni" | "Trudny";
+type Levels = "Easy" | "Medium" | "Hard";
 const colorsArray: string[] = ["#6e0051", "#585d4f", "#ae49c4", "#c155a3", "#9d5c3b", "#013f00", "#905b4e",
   "#3a4391", "#646908", "#7c11b7", "#ca4959", "#d7b803", "#577ade", "#7556bb", "#4f7eaf", "#e65560", "#58a798", "#ebf8ca",
   "#5b2c59", "#6e6969", "#12b105", "#86baaa", "#204993", "#444446", "#53ac1d", "#51ade7"];
@@ -188,16 +188,16 @@ class Game{
   }
   getNumberofSquare(lvl: string): PropertyOfSquare {
    let property: PropertyOfSquare;
-    if (lvl == "Łatwy") {
+    if (lvl == "Easy") {
        property = {
         numberOfSquare: 24,
         row: 4,
         column: 6,
-         timeToShowColors: 1000,
+         timeToShowColors: 3000,
          howMuchSameColor: 2,
          gameWithNumber:true
       };
-    } else if (lvl == "Średni") {
+    } else if (lvl == "Medium") {
        property = {
         numberOfSquare: 30,
         row: 5,
@@ -206,7 +206,7 @@ class Game{
          howMuchSameColor: 2,
          gameWithNumber:false
       };
-    } else if (lvl == "Trudny") {
+    } else if (lvl == "Hard") {
        property = {
         numberOfSquare: 42,
         row: 7,
@@ -257,7 +257,6 @@ class Game{
       arraytToReturn[x] = arraytToReturn[j]
       arraytToReturn[j]=k
     }
-    console.log(arraytToReturn)
     return arraytToReturn
     
   }
@@ -276,17 +275,17 @@ class GameOnTime extends Game{
 
   getNumberofSquare(lvl: string): PropertyOfSquare {
     let property: PropertyOfSquare;
-     if (lvl == "Łatwy") {
+     if (lvl == "Easy") {
         property = {
          numberOfSquare: 24,
          row: 4,
          column: 6,
-          timeToShowColors: 1000,
+          timeToShowColors: 3000,
           timeForPlay:60,
           howMuchSameColor: 2,
           gameWithNumber:true
        };
-     } else if (lvl == "Średni") {
+     } else if (lvl == "Medium") {
         property = {
          numberOfSquare: 30,
          row: 5,
@@ -296,7 +295,7 @@ class GameOnTime extends Game{
           timeForPlay:120,
           gameWithNumber:false
        };
-     } else if (lvl == "Trudny") {
+     } else if (lvl == "Hard") {
         property = {
          numberOfSquare: 42,
          row: 7,
@@ -316,7 +315,7 @@ class GameOnNumbers extends Game{
   }
   getNumberofSquare(lvl: string): PropertyOfSquare {
     let property: PropertyOfSquare;
-    if (lvl == "Łatwy") {
+    if (lvl == "Easy") {
       property = {
        numberOfSquare: 24,
        row: 4,
@@ -325,7 +324,7 @@ class GameOnNumbers extends Game{
         howMuchSameColor: 8,
         gameWithNumber:true
      };
-   } else if (lvl == "Średni") {
+   } else if (lvl == "Medium") {
      property = {
        numberOfSquare: 36,
        row: 6,
@@ -335,7 +334,7 @@ class GameOnNumbers extends Game{
        gameWithNumber:true
        
      };
-   } else if (lvl == "Trudny") {
+   } else if (lvl == "Hard") {
      property = {
        numberOfSquare: 42,
        row: 6,
@@ -354,7 +353,7 @@ class GamesOnNumberWithTime extends GameOnTime{
   }
   getNumberofSquare(lvl: string): PropertyOfSquare {
     let property: PropertyOfSquare;
-    if (lvl == "Łatwy") {
+    if (lvl == "Easy") {
       property = {
        numberOfSquare: 24,
        row: 4,
@@ -364,7 +363,7 @@ class GamesOnNumberWithTime extends GameOnTime{
         howMuchSameColor: 8,
         gameWithNumber:true
      };
-   } else if (lvl == "Średni") {
+   } else if (lvl == "Medium") {
      property = {
        numberOfSquare: 36,
        row: 6,
@@ -375,7 +374,7 @@ class GamesOnNumberWithTime extends GameOnTime{
        gameWithNumber:true
        
      };
-   } else if (lvl == "Trudny") {
+   } else if (lvl == "Hard") {
      property = {
        numberOfSquare: 42,
        row: 6,
