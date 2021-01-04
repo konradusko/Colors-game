@@ -172,7 +172,7 @@ class Game {
                 column: 6,
                 timeToShowColors: 3000,
                 howMuchSameColor: 2,
-                gameWithNumber: true
+                gameWithNumber: false
             };
         }
         else if (lvl == "Medium") {
